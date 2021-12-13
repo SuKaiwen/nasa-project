@@ -3,24 +3,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import React, {useState, useEffect} from 'react';
 import spaceman from '../public/images/spaceman.jpg';
+import Link from 'next/link';
 
 export default function Home() {
-
-  const [imageData, setImageData] = useState();
-  const [dataFound, setDataFound] = useState(false);
-
-  useEffect(() => {
-    getPicture();
-  }, [])
-
-  
-
-  const getPicture = async () => {
-    const get_api = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.NEXT_PUBLIC_NASA_API_KEY}`)
-      .then(response => response.json())
-      .then(resData => {console.log(resData); setImageData(resData); setDataFound(true);})
-      .catch(err => alert("Data not found"))
-  }
 
   return (
     <div className={styles.container}>
@@ -83,22 +68,11 @@ export default function Home() {
             <p>As of 13/12/2021</p>
             <h2>Image of the day</h2>
             <div className = {styles.bottom}>
-              <p>View Image <i class="fas fa-arrow-right"></i></p>
+              <Link href="/dailyImage"><p>View Image <i class="fas fa-arrow-right"></i></p></Link>
             </div>
           </div>
         </div>
       </div>
-      <h1>NASA API</h1>
-      {dataFound && 
-        <>
-          <img src = {imageData.url} alt = "" />
-          <h1>{imageData.title}</h1>
-          <p>By: {imageData.copyright}</p>
-          <p>Date: {imageData.date}</p>
-          <p>{imageData.explanation}</p>
-          <p>HD image link: {imageData.hdurl}</p>
-        </>
-      }
     </div>
   )
 }

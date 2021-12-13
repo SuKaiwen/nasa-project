@@ -5,36 +5,34 @@ function Footer(props) {
     return (
         <div className = {footerStyles.footerContainer}>
             <div className = {footerStyles.footerCol}>
-                <p className = {footerStyles.footerTitle}>Support</p>
+                <p className = {footerStyles.footerTitle}>About Us</p>
                 <hr />
-                <p>Help Center</p>
-                <p>Safety Info</p>
-                <p>Covid-19 Guidelines</p>
-                <p>Cancellation Options</p>
+                <p>NASA</p>
+                <p>Our Journey</p>
+                <p>Achievements</p>
+                <p>Future</p>
             </div>
             <div className = {footerStyles.footerCol}>
-                <p className = {footerStyles.footerTitle}>Community</p>
+                <p className = {footerStyles.footerTitle}>Missions</p>
                 <hr />
-                <p>Disaster Relief</p>
-                <p>Support Refugees</p>
-                <p>Diversity and Belonging</p>
-                <p>Combat Discrimination</p>
+                <p>Moon</p>
+                <p>Mars</p>
+                <p>Rovers</p>
+                <p>Rockets</p>
             </div>
             <div className = {footerStyles.footerCol}>
-                <p className = {footerStyles.footerTitle}>Hosting</p>
+                <p className = {footerStyles.footerTitle}>Security</p>
                 <hr />
-                <p>Try Hosting</p>
-                <p>FAQ</p>
-                <p>Hosting Guidelines</p>
+                <p>No Fear Act</p>
+                <p>FOIA</p>
+                <p>Privacy</p>
             </div>
             <div className = {footerStyles.footerCol}>
-                <p className = {footerStyles.footerTitle}>About</p>
+                <p className = {footerStyles.footerTitle}>Official</p>
                 <hr />
-                <p>Our Story</p>
-                <p>Careers</p>
-                <p>Letters from our Founders</p>
-                <p>Investors</p>
-                <p>AirCnC Prenium</p>
+                <p>Contact Us</p>
+                <p>Office of Special Council</p>
+                <p>Agency Financial Reports</p>
             </div>
         </div>
     );
