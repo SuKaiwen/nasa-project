@@ -1,0 +1,21 @@
+.grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section{
+    width: 32%;
+}
+
+.section img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.galleryContainer{
+    width: 80%;
+}

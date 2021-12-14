@@ -31,7 +31,7 @@ export default function Home() {
             <p>As of 13/12/2021</p>
             <h1>200+ images collected by NASA</h1>
             <div className = {styles.bottom}>
-              <p>View Our Gallery <i class="fas fa-arrow-right"></i></p>
+              <Link href="/gallery"><p>View Our Gallery <i className="fas fa-arrow-right"></i></p></Link>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function Home() {
               <p>The Hubble Space Telescope (often referred to as HST or Hubble) is a space telescope that was launched into low Earth orbit in 1990 and remains in operation. It was not the first space telescope, but it is one of the largest and most versatile, renowned both as a vital research tool and as a public relations boon for astronomy.</p>
             </div>
             <div className = {styles.bottom}>
-              <p>More Info <i class="fas fa-arrow-right"></i></p>
+              <p>More Info <i className="fas fa-arrow-right"></i></p>
             </div>
           </div>
           <div className={`${styles.rowHalf} ${styles.textCol}`}>

@@ -12,13 +12,13 @@ function Nav(props) {
                     <Link href="/">Home</Link>
                 </li>
                 <li>
-                    <Link href="/">Gallery</Link>
+                    <Link href="/gallery">Gallery</Link>
                 </li>
                 <li>
                     <Link href="/">About</Link>
                 </li>
             </ul>
-            <div className={navStyles.navLogo}>About Us</div>
+            <div className={navStyles.navLogo}>Contact Us</div>
         </nav>
     );
 }
